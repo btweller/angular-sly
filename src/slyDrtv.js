@@ -47,7 +47,7 @@ angularSly.directive('slyHorizontal', function(){
 			var options =  $.extend({}, defaultOptions, defaultControls, scope.$eval(attrs.slyOptions));
 			var callback = scope.$eval(attrs.slyCallback) || function(cb){};
 			// Call Sly on frame
-			frame.sly(options, callback());
+			frame.sly(options, callback);
 			//         scope.$emit('ngRepeatFinished');
 			//     });
 			// }
@@ -79,7 +79,7 @@ angularSly.directive('slyVertical', function(){
 			var options =  $.extend({}, defaultOptions, defaultControls, scope.$eval(attrs.slyOptions));
 			var callback = scope.$eval(attrs.slyCallback) || function(cb){};
 			// Call Sly on frame
-			frame.sly(options, callback());
+			frame.sly(options, callback);
 		}
 	}
 });
@@ -114,7 +114,7 @@ angularSly.directive('slyHorizontalRepeat',  function($timeout){
 			var options =  $.extend({}, defaultOptions, defaultControls, scope.$eval(attrs.slyOptions));
 			var callback = scope.$eval(attrs.slyCallback) || function(cb){};
 			// Call Sly on frame
-			frame.sly(options, callback());
+			frame.sly(options, callback);
 			//         scope.$emit('ngRepeatFinished');
 			    });
 			}
@@ -149,7 +149,7 @@ angularSly.directive('slyVerticalRepeat', function($timeout){
                     var options = $.extend({}, defaultOptions, defaultControls, scope.$eval(attrs.slyOptions));
                     var callback = scope.$eval(attrs.slyCallback) || function(cb){};
                     // Call Sly on frame
-                    frame.sly(options, callback());
+                    frame.sly(options, callback);
                 });
             }
 		}

@@ -44,7 +44,7 @@ angularSly.directive('slyHorizontal', function () {
       var callback = scope.$eval(attrs.slyCallback) || function (cb) {
         };
       // Call Sly on frame
-      frame.sly(options, callback());  //         scope.$emit('ngRepeatFinished');
+      frame.sly(options, callback);  //         scope.$emit('ngRepeatFinished');
                                        //     });
                                        // }
     }
@@ -72,7 +72,7 @@ angularSly.directive('slyVertical', function () {
       var callback = scope.$eval(attrs.slyCallback) || function (cb) {
         };
       // Call Sly on frame
-      frame.sly(options, callback());
+      frame.sly(options, callback);
     }
   };
 });
@@ -106,7 +106,7 @@ angularSly.directive('slyHorizontalRepeat', [
             var callback = scope.$eval(attrs.slyCallback) || function (cb) {
               };
             // Call Sly on frame
-            frame.sly(options, callback());  //         scope.$emit('ngRepeatFinished');
+            frame.sly(options, callback);  //         scope.$emit('ngRepeatFinished');
           });
         }
       }
@@ -139,7 +139,7 @@ angularSly.directive('slyVerticalRepeat', [
             var callback = scope.$eval(attrs.slyCallback) || function (cb) {
               };
             // Call Sly on frame
-            frame.sly(options, callback());
+            frame.sly(options, callback);
           });
         }
       }
